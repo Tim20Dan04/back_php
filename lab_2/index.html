@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
-
+    <script src="main.js"></script>
 </head>
 <body>
     <header class="header">
@@ -15,29 +15,39 @@
     <main>
         <section class="container">
             <div class="grid">
-                <input class="span4" type="text">
-                <button class="buts white-gray">AC</button>
-                <button class="buts white-gray">(</button>
-                <button class="buts white-gray">)</button>
-                <button class="buts orange">÷</button>
-                <button class="buts gray">7</button>
-                <button class="buts gray">8</button>
-                <button class="buts gray">9</button>
-                <button class="buts orange">×</button>
-                <button class="buts gray">4</button>
-                <button class="buts gray">5</button>
-                <button class="buts gray">6</button>
-                <button class="buts orange">-</button>
-                <button class="buts gray">1</button>
-                <button class="buts gray">2</button>
-                <button class="buts gray">3</button>
-                <button class="buts orange">+</button>
-                <button class="span2 gray">0</button>
-                <button class="buts gray">,</button>
-                <button class="buts orange">=</button>
+                <!-- <form class="span4" action=""> -->
+                <input class="span4" type="text" id="display" readonly>
+                    <!-- <button class="backspace"><img src="backspace.svg" alt=""></button>
+                </form> -->
+                <button class="buts white-gray" onclick="Clear()">AC</button>
+                <button class="buts white-gray" onclick="AddToDisplay('(')">(</button>
+                <button class="buts white-gray" onclick="AddToDisplay(')')">)</button>
+                <button class="buts orange" onclick="AddToDisplay('/')">÷</button>
+
+                <button class="buts gray" onclick="AddToDisplay('7')">7</button>
+                <button class="buts gray" onclick="AddToDisplay('8')">8</button>
+                <button class="buts gray" onclick="AddToDisplay('9')">9</button>
+
+                <button class="buts orange" onclick="AddToDisplay('*')">×</button>
+
+                <button class="buts gray" onclick="AddToDisplay('4')">4</button>
+                <button class="buts gray" onclick="AddToDisplay('5')">5</button>
+                <button class="buts gray" onclick="AddToDisplay('6')">6</button>
+
+                <button class="buts orange" onclick="AddToDisplay('-')">-</button>
+
+                <button class="buts gray" onclick="AddToDisplay('1')">1</button>
+                <button class="buts gray" onclick="AddToDisplay('2')">2</button>
+                <button class="buts gray" onclick="AddToDisplay('3')">3</button>
+
+                <button class="buts orange" onclick="AddToDisplay('+')">+</button>
+
+                <button class="span2 gray" onclick="AddToDisplay('0')">0</button>
+                <button class="buts gray" onclick="AddToDisplay('.')">,</button>
+                <button class="buts orange" onclick="Equalize()">=</button>
+                <button class="buts orange" onclick="Backscape()">M</button>
             </div>
         </section>
     </main>
-    <script src="main.js"></script>
 </body>
 </html>
