@@ -1,0 +1,24 @@
+body {
+    background-color: #eee !important;
+}
+header {
+    margin-bottom: 15px;
+}
+.fix {
+    margin-left: -15px;
+}
+.inp_fx {
+    position: relative;
+    left: 20px;
+}
+.fffix {
+    left: 25px
+}
+.ffix {
+    position: relative;
+    right: 15px;
+}
+.ffffix {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
